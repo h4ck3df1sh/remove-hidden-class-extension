@@ -1,0 +1,13 @@
+{
+    "name": "Remove hidden class",
+    "version": "1.0",
+    "manifest_version": 2,
+    "description": "Removes the 'hidden' class from elements with class='col-3 post-meta text-right user-controls hidden'",
+    "content_scripts": [
+      {
+        "matches": ["http://localhost:8080:/*"],
+        "js": ["script.js"]
+      }
+    ]
+  }
+  
