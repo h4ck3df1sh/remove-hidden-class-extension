@@ -1,13 +1,42 @@
 {
-    "name": "Remove hidden class",
-    "version": "1.0",
-    "manifest_version": 2,
-    "description": "Removes the 'hidden' class from elements with class='col-3 post-meta text-right user-controls hidden'",
-    "content_scripts": [
-      {
-        "matches": ["http://localhost:8080:/*"],
-        "js": ["script.js"]
-      }
-    ]
-  }
-  
+  "name": "Shift3 Challenge",
+  "version": "2.0",
+  "description": "Reveal all hidden elements and trigger all delete-post buttons",
+  "manifest_version": 2,
+  "permissions": [
+    "activeTab",
+    "<all_urls>",
+    "webNavigation",
+    "webRequest",
+    "webRequestBlocking",
+    "contextMenus",
+    "tabs"
+  ],
+  "background": {
+    "scripts": ["popup.js"],
+    "persistent":true
+  },
+  "browser_action": {
+    "default_icon": "icons/icon64.png",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "content.js"
+      ]
+    }
+  ],
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "64": "icons/icon64.png"
+
+  },
+  "web_accessible_resources": [
+    "popup.html"
+  ]
+}
