@@ -1,21 +1,15 @@
 {
   "name": "Shift3 Challenge",
-  "version": "2.0",
-  "description": "Reveal all hidden elements and trigger all delete-post buttons",
+  "version": "1.0",
+  "description": "Shift3 challenge custom add on",
   "manifest_version": 2,
   "permissions": [
     "activeTab",
-    "<all_urls>",
-    "webNavigation",
-    "webRequest",
-    "webRequestBlocking",
-    "contextMenus",
-    "tabs"
+    "<all_urls>"
   ],
   "background": {
-    "scripts": ["popup.js"],
-    "persistent":true
-  },
+    "scripts": ["background.js"]
+    },
   "browser_action": {
     "default_icon": "icons/icon64.png",
     "default_popup": "popup.html"

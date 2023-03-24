@@ -1,8 +1,8 @@
-> This is custom web extension to unhide all hidden elements of a web in order to resolve a pentesting challenge provided by shift3. [Challenge](https://github.com/Shift3/penetration-testing-challenge)
+> This is custom web extension to reveal hidden elements of a web in order to resolve a pentesting challenge provided by shift3. [Challenge](https://github.com/Shift3/penetration-testing-challenge)
 
 # Remove hidden class
 
-This browser extension removes the "hidden" class from elements with class="col-3 post-meta text-right user-controls hidden" on a specified website.
+This browser extension removes the "hidden" class from web elements
 
 ## Installation
 
